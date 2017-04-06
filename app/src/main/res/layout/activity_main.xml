@@ -26,30 +26,36 @@
         />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="3dp"
-        android:text="수긍할 때" />
+        android:text="수긍할 때"
+        android:onClick="onClick"
+        />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="3dp"
-        android:text="슬플 때" />
+        android:text="슬플 때"
+        android:onClick="onClick"
+        />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="3dp"
         android:text="모를 때" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="3dp"
-        android:text="대답할 때" />
+        android:text="대답할 때"
+        android:onClick="onClick"
+        />
 </LinearLayout>
