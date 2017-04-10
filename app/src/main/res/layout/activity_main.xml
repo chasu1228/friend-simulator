@@ -3,10 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gridview"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="kr.hs.emirim.progh2.friendsimulator.u_jin.MainActivity">
+    tools:context="kr.hs.emirim.progh2.friendsimulator.u_jin.MainActivity"
+    android:weightSum="1">
 
     <TextView
         android:layout_width="match_parent"
@@ -17,31 +19,20 @@
         app:layout_constraintBottom_toBottomOf="parent" />
 
     <Button
-        android:id="@+id/button1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="3dp"
-        android:text="부를 때"
-        android:onClick="onClick"
-        />
-
-    <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="3dp"
-        android:text="수긍할 때"
         android:onClick="onClick"
-        />
+        android:text="수긍할 때" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="3dp"
-        android:text="슬플 때"
         android:onClick="onClick"
-        />
+        android:text="슬플 때" />
 
     <Button
         android:id="@+id/button4"
@@ -55,7 +46,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="3dp"
-        android:text="대답할 때"
         android:onClick="onClick"
-        />
+        android:text="대답할 때" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:onClick="onClick"
+        android:text="부를 때" />
+
 </LinearLayout>
