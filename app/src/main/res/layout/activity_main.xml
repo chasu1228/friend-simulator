@@ -20,7 +20,7 @@
     <ImageView
         android:id="@+id/friend_visual"
         android:layout_gravity="center"
-        android:src="@drawable/Jang_2"
+        android:src="@drawable/yu02"
         android:layout_width="180dp"
         android:layout_height="180dp" />
     <Button
@@ -44,6 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="3dp"
+        android:onClick="onClick"
         android:text="모를 때" />
 
     <Button
