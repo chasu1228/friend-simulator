@@ -1,5 +1,6 @@
 package kr.hs.emirim.progh2.friendsimulator.u_jin;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -10,6 +11,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     public final static String TAG="장유진 : MainActivity";
     private ImageView mImageViewfriendVisual;
+    private MediaPlayer mMeidaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,17 +20,32 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mImageViewfriendVisual = (ImageView) findViewById(R.id.friend_visual);
         Log.d(TAG,"activity_main 레이아웃 세팅~");
+        mMeidaPlayer = MediaPlayer.create(this.R.raw.tt);
+        mMeidaPlayer.setLooping(false);
+        mMeidaPlayer.start();
 
     }
+    protected void onDestroy() {
+        super.onDestroy();
+        mMeidaPlayer.pause();
+        mMeidaPlayer.stop();
+    }
+
 
     void onClick( View view) {
         Log.d(TAG,"onCreats 메소드 호출~");
         Log.d(TAG,"클릭된 뷰 id : "+view.getId());
+        if(mMeidaPlayer.isPlaying()){
+            mMeidaPlayer.pause();
+        }
         switch (view.getId()){
             case R.id.button1:
                 Log.d(TAG,"버튼1 클릭");
                 mImageViewfriendVisual.setImageResource(R.drawable.yu02);
                 Toast.makeText(this, "뚜뚜들아~", Toast.LENGTH_SHORT).show(); break;
+                mMeidaPlayer = MediaPlayer.create(this.R.raw.dduddu);
+                mMeidaPlayer.start();
+                break;
             case R.id.button2:
                 Log.d(TAG,"버튼2 클릭");
                 mImageViewfriendVisual.setImageResource(R.drawable.yu04);
