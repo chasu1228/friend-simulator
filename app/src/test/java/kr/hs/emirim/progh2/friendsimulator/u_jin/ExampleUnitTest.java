@@ -2,7 +2,7 @@ package kr.hs.emirim.progh2.friendsimulator.u_jin;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Example local unit test, which will execute on the development machine (host).
